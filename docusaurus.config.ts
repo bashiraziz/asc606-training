@@ -21,6 +21,20 @@ const config: Config = {
     locales: ['en'],
   },
 
+  plugins: [
+    [
+      require.resolve('@easyops-cn/docusaurus-search-local'),
+      {
+        hashed: true,
+        indexDocs: true,
+        indexPages: false,
+        docsRouteBasePath: '/docs',
+        searchResultLimits: 8,
+        searchBarShortcutHint: false,
+      },
+    ],
+  ],
+
   presets: [
     [
       'classic',

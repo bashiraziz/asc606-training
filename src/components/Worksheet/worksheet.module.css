@@ -539,6 +539,24 @@
   .fg3 { grid-template-columns: 1fr 1fr; }
   .sumGrid { grid-template-columns: 1fr; }
   .checklist { grid-template-columns: 1fr; }
+
+  .app { padding: 0.5rem 0 2rem; }
+  .banner { padding: 1rem; }
+  .bannerTitle { font-size: 15px; }
+  .tabs { gap: 3px; }
+  .tab { font-size: 11px; padding: 5px 9px; }
+  .card { padding: 0.9rem; }
+
+  /* Criteria table — allow horizontal scroll */
+  .criteriaTable { font-size: 12px; }
+  .criteriaTable th, .criteriaTable td { padding: 6px 6px; }
+
+  /* Radio group stacks vertically on small screens */
+  .radioGroup { flex-direction: column; gap: 6px; }
+
+  /* Sign-off table — hide notes column */
+  .signTable td:last-child,
+  .signTable th:last-child { display: none; }
 }
 
 @media print {

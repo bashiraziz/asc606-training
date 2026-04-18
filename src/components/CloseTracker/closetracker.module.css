@@ -364,4 +364,54 @@
   .metricGrid { grid-template-columns: 1fr 1fr; }
   .fg3 { grid-template-columns: 1fr; }
   .chkGrid { grid-template-columns: 1fr; }
+  .banner { flex-direction: column; align-items: flex-start; }
+  .bannerRight { width: 100%; }
+  .tabs { gap: 4px; }
+  .tab { font-size: 11px; padding: 5px 9px; }
+}
+
+@media print {
+  @page { margin: 1.8cm 1.5cm; }
+
+  .banner       { display: none !important; }
+  .progressWrap { display: none !important; }
+  .tabs         { display: none !important; }
+  .btnDanger    { display: none !important; }
+
+  .app  { max-width: 100%; padding: 0; }
+  .card {
+    border: 1px solid #ccc;
+    box-shadow: none;
+    break-inside: avoid;
+    margin-bottom: 0.75rem;
+    padding: 0.75rem;
+  }
+
+  .secHdr {
+    background: #2E75B6 !important;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+    font-size: 11px;
+    padding: 5px 8px;
+  }
+
+  .table th {
+    background: #1F3864 !important;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  .tableWrap { overflow: visible; }
+
+  .metricGrid { grid-template-columns: repeat(4, 1fr); }
+
+  .input, .inputSm {
+    border: none;
+    border-bottom: 1px solid #ccc;
+    border-radius: 0;
+    background: transparent !important;
+    padding: 2px 0;
+  }
+
+  .btn, .btnPrimary { display: none; }
 }
