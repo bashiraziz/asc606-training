@@ -6,3 +6,4 @@ package-lock.json
 *.swp
 ASC606_REFERENCE_IMPLEMENTATIONS.md
 ASC606_Training_Site_CC_Brief.md
+.claude/

@@ -14,7 +14,11 @@ const config: Config = {
   projectName: 'asc606-training',
 
   onBrokenLinks: 'throw',
-  onBrokenMarkdownLinks: 'warn',
+  markdown: {
+    hooks: {
+      onBrokenMarkdownLinks: 'warn',
+    },
+  },
 
   i18n: {
     defaultLocale: 'en',
@@ -27,6 +31,7 @@ const config: Config = {
       {
         hashed: true,
         indexDocs: true,
+        indexBlog: false,
         indexPages: false,
         docsRouteBasePath: '/docs',
         searchResultLimits: 8,
