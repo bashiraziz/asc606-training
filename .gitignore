@@ -4,3 +4,5 @@ build/
 package-lock.json
 .DS_Store
 *.swp
+ASC606_REFERENCE_IMPLEMENTATIONS.md
+ASC606_Training_Site_CC_Brief.md
