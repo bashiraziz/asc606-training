@@ -348,7 +348,7 @@ export default function Worksheet(): React.JSX.Element {
             </div>
           )}
           <div className={styles.card}>
-            <div className={styles.secHdr}>Step 1 — identify the contract <span className={styles.diffTag}>ASC 606-10-25-1</span></div>
+            <div className={styles.secHdr}>Step 1 — identify the contract <span className={styles.diffTag} data-tooltip="FASB ASC 606-10-25-1: Identify the contract with a customer">ASC 606-10-25-1</span></div>
             <p className={styles.hint}>All five criteria must be met before you can account for this as a revenue contract.</p>
             <div className={styles.tableWrap}>
               <table className={styles.criteriaTable}>
@@ -411,7 +411,7 @@ export default function Worksheet(): React.JSX.Element {
       {activeTab === 2 && (
         <div className={styles.panel}>
           <div className={styles.card}>
-            <div className={styles.secHdr}>Step 2 — identify performance obligations <span className={styles.diffTag}>ASC 606-10-25-14</span></div>
+            <div className={styles.secHdr}>Step 2 — identify performance obligations <span className={styles.diffTag} data-tooltip="FASB ASC 606-10-25-14: Identify performance obligations in the contract">ASC 606-10-25-14</span></div>
             <p className={styles.hint}>A good/service is distinct if it is <em>capable of being distinct</em> AND <em>distinct within the contract</em>.</p>
             <div className={styles.tableWrap}>
               <table className={styles.poTable}>
@@ -493,7 +493,7 @@ export default function Worksheet(): React.JSX.Element {
       {activeTab === 3 && (
         <div className={styles.panel}>
           <div className={styles.card}>
-            <div className={styles.secHdr}>Step 3 — determine the transaction price <span className={styles.diffTag}>ASC 606-10-32-2</span></div>
+            <div className={styles.secHdr}>Step 3 — determine the transaction price <span className={styles.diffTag} data-tooltip="FASB ASC 606-10-32-2: Determine the transaction price">ASC 606-10-32-2</span></div>
             <VCRow label="Base contract price ($)">
               <input className={`${styles.input} ${styles.mono}`} type="number" style={{maxWidth:'200px'}} value={tp.base} onChange={e => setTP(p => ({...p,base:e.target.value}))} placeholder="0.00" min={0} step="0.01" />
             </VCRow>
@@ -562,7 +562,7 @@ export default function Worksheet(): React.JSX.Element {
       {activeTab === 4 && (
         <div className={styles.panel}>
           <div className={styles.card}>
-            <div className={styles.secHdr}>Step 4 — allocate the transaction price <span className={styles.diffTag}>ASC 606-10-32-28</span></div>
+            <div className={styles.secHdr}>Step 4 — allocate the transaction price <span className={styles.diffTag} data-tooltip="FASB ASC 606-10-32-28: Allocate the transaction price to performance obligations">ASC 606-10-32-28</span></div>
             <p className={styles.hint}>Enter stand-alone selling prices. Allocation calculates automatically.</p>
             <div className={styles.tpReminder}>
               Transaction price to allocate: <strong className={styles.mono}>{fmt(tpTotal)}</strong>
@@ -629,7 +629,7 @@ export default function Worksheet(): React.JSX.Element {
       {activeTab === 5 && (
         <div className={styles.panel}>
           <div className={styles.card}>
-            <div className={styles.secHdr}>Step 5 — recognize revenue <span className={styles.diffTag}>ASC 606-10-25-23</span></div>
+            <div className={styles.secHdr}>Step 5 — recognize revenue <span className={styles.diffTag} data-tooltip="FASB ASC 606-10-25-23: Recognize revenue when (or as) performance obligations are satisfied">ASC 606-10-25-23</span></div>
             {validPOs.length === 0 ? (
               <div className={styles.alertWarn}>No POs yet. Complete Step 2 first.</div>
             ) : (
@@ -715,7 +715,7 @@ export default function Worksheet(): React.JSX.Element {
       {activeTab === 6 && (
         <div className={styles.panel}>
           <div className={styles.card}>
-            <div className={styles.secHdr}>Contract costs <span className={styles.diffTag}>ASC 340-40</span></div>
+            <div className={styles.secHdr}>Contract costs <span className={styles.diffTag} data-tooltip="FASB ASC 340-40: Other Assets and Deferred Costs — contracts with customers">ASC 340-40</span></div>
             <table className={styles.criteriaTable}>
               <thead>
                 <tr><th>Cost type</th><th>Example</th><th>Treatment</th><th>Amount ($)</th><th>Amort. (months)</th></tr>
@@ -753,7 +753,7 @@ export default function Worksheet(): React.JSX.Element {
             )}
           </div>
           <div className={styles.card}>
-            <div className={styles.secHdr}>Disclosure checklist <span className={styles.diffTag}>ASC 606-10-50</span></div>
+            <div className={styles.secHdr}>Disclosure checklist <span className={styles.diffTag} data-tooltip="FASB ASC 606-10-50: Disclosure requirements for revenue from contracts with customers">ASC 606-10-50</span></div>
             <div className={styles.checklist}>
               {DISC_ITEMS.map((item, i) => (
                 <label key={i} className={`${styles.chkItem} ${discChecks[i] ? styles.chkChecked : ''}`}>
