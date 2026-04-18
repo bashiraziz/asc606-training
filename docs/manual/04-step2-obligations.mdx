@@ -4,6 +4,8 @@ title: Step 2 — Performance obligations
 description: Distinct test (capable + within contract), series provision, principal vs. agent, bundling
 ---
 
+import Quiz from '@site/src/components/Quiz';
+
 # Module 4 — Step 2: Identify performance obligations
 
 ## What is a performance obligation?
@@ -120,3 +122,34 @@ For each promised good or service in the contract:
 - The series provision allows recurring services to be treated as one PO — simplifying measurement
 - Principal vs. agent determines whether revenue is recognized gross or net — control before transfer is the decisive factor
 - Customer options that are material rights are separate POs — allocate transaction price accordingly
+
+---
+
+## Knowledge check
+
+<Quiz questions={[
+  {
+    q: "For a good or service to be a distinct performance obligation it must satisfy:",
+    options: ["Either test — capable of being distinct OR distinct within the contract", "Both tests — capable of being distinct AND distinct within the context of the contract", "Only the capable test — if the customer can use it standalone, it is always distinct", "Only the within-contract test — if it is separately listed in the contract, it is distinct"],
+    correct: 1,
+    explanation: "ASC 606-10-25-19 requires both parts: (1) the customer can benefit from the good/service on its own or with readily available resources, AND (2) the entity's promise is separately identifiable from other promises. Both must be met."
+  },
+  {
+    q: "The series provision treats multiple distinct services as a single performance obligation when:",
+    options: ["The contract term exceeds 12 months", "Each service is substantially the same AND has the same pattern of transfer to the customer", "The customer requests unified billing", "The entity uses a single cost pool for the services"],
+    correct: 1,
+    explanation: "Under ASC 606-10-25-14(b), the series provision applies when each distinct service is substantially the same (same nature) AND each has the same pattern of transfer — meaning the same over-time criterion and the same measure of progress."
+  },
+  {
+    q: "An agent recognizes revenue as:",
+    options: ["The gross transaction amount billed to the end customer", "The net fee or commission for arranging the transaction", "Revenue only after the principal delivers to the end customer", "Revenue when the purchase order from the end customer is received"],
+    correct: 1,
+    explanation: "An entity is an agent when it does not control the specified good or service before transfer. Agents recognize only the net fee or commission — not the gross transaction amount — because they do not obtain and then transfer control."
+  },
+  {
+    q: "A customer loyalty points program is an example of:",
+    options: ["An assurance-type warranty", "A material right — a separate performance obligation", "A contract modification", "Variable consideration subject to the constraint"],
+    correct: 1,
+    explanation: "Loyalty points give customers an option to acquire goods/services at a discount not available without the contract, making them a material right. Material rights are separate performance obligations with a portion of TP allocated to them."
+  }
+]} />

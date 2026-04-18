@@ -4,6 +4,8 @@ title: Case studies & knowledge check
 description: Two worked case studies and an 8-question True/False quiz with answer key
 ---
 
+import Quiz from '@site/src/components/Quiz';
+
 # Module 10 — Case studies & knowledge check
 
 ## Case study 1 — SaaS contract with onboarding and variable bonus
@@ -101,40 +103,34 @@ The contract has no alternative use for BuildCo, and the government has an uncon
 
 ---
 
-## Knowledge check — True / False
+## Knowledge check
 
-Test your understanding of ASC 606. Review your answers against the key below.
-
-**1.** Revenue can be recognized before a contract meets all five criteria in Step 1, as long as the entity is substantially certain it will collect.
-
-**2.** A good or service that is "capable of being distinct" but not "distinct within the contract" must be bundled with related promises.
-
-**3.** Under the expected value method, an entity multiplies the most likely outcome by its probability.
-
-**4.** Variable consideration must always be fully excluded from the transaction price until the uncertainty is resolved.
-
-**5.** A warranty that covers accidental damage beyond normal product defects is an assurance-type warranty.
-
-**6.** Revenue from a perpetual software license (right-to-use) is recognized at the point in time the license is granted to the customer.
-
-**7.** The residual approach for estimating SSP can be used whenever it produces a reasonable estimate.
-
-**8.** In a consignment arrangement, revenue is recognized when the product is delivered to the consignee.
-
----
-
-## Answer key
-
-| # | Answer | Explanation |
-|---|---|---|
-| 1 | **False** | All five criteria must be met. If any criterion is unmet — including collectibility — no revenue is recognized. Consideration received is a liability. |
-| 2 | **True** | Both parts of the distinct test must be met. Failing either part requires bundling with related promises until a distinct unit is identified. |
-| 3 | **False** | The expected value method multiplies **each** possible outcome by its probability and sums the results. The most-likely-amount method uses the single most probable outcome. |
-| 4 | **False** | Variable consideration is included to the extent it is highly probable that a significant revenue reversal will not occur. It is not always fully excluded. |
-| 5 | **False** | A warranty covering accidental damage goes **beyond** assuring the product meets specifications — it is a **service-type warranty** and a separate performance obligation. |
-| 6 | **True** | A perpetual software license (right-to-use) is recognized at the point in time the license is granted, because the customer obtains control at that moment. |
-| 7 | **False** | The residual approach is permitted only when the SSP is **highly variable** or **uncertain**. It cannot be used simply because it is convenient or produces a desired result. |
-| 8 | **False** | In a consignment arrangement, revenue is recognized only when the **consignee sells to the end customer** (or another specified event transfers control). Delivery to the consignee does not transfer control. |
+<Quiz questions={[
+  {
+    q: "TechCo bundles a $80,000 perpetual license + 3-year support for a total of $100,000. SSPs: license $85,000, support $45,000. How much is allocated to the license?",
+    options: ["$80,000 — the stated contract price for the license", "$85,000 — the standalone selling price", "$65,385 — proportional relative-SSP allocation", "$50,000 — equal split between the two obligations"],
+    correct: 2,
+    explanation: "Total SSP = $85,000 + $45,000 = $130,000. License share = $85,000 / $130,000 = 65.38%. Allocated TP = 65.38% × $100,000 = $65,385. The bundle discount is spread proportionally — never front-loaded to the license."
+  },
+  {
+    q: "A contractor has a $10M fixed-price job with estimated total cost of $8M. After year 1, $2M of costs have been incurred. How much revenue is recognized in year 1?",
+    options: ["$2,000,000", "$2,500,000", "$3,000,000", "$10,000,000"],
+    correct: 1,
+    explanation: "Cost-to-cost % = $2M / $8M = 25%. Revenue = 25% × $10M = $2,500,000. In year 2, if cumulative costs are $6.6M against a revised total of $9M, cumulative % = 73.3% — cumulative revenue = $7,333,333, so year 2 revenue = $4,833,333."
+  },
+  {
+    q: "A manufacturer ships $500,000 of goods to a distributor on consignment. When is revenue recognized?",
+    options: ["When the goods are shipped to the distributor", "30 days after shipment under standard industry terms", "When the distributor sells the goods to end customers", "When the distributor takes physical custody of the goods"],
+    correct: 2,
+    explanation: "In consignment, the manufacturer retains control — the distributor has no unconditional obligation to pay and can return unsold goods. Revenue is recognized only when the distributor reports a sale to an end customer, at which point control transfers."
+  },
+  {
+    q: "A SaaS company charges a $5,000 non-refundable setup fee + $500/month over 24 months. Setup is not a distinct PO. How is the $5,000 recognized?",
+    options: ["Immediately when received, as setup work is complete", "Ratably over 24 months, combined with the monthly subscription fees", "Only when the full 24-month contract term expires", "Over the first 3 months as a fulfillment cost amortization"],
+    correct: 1,
+    explanation: "When the setup fee does not relate to a distinct PO, it is combined with the subscription into a single obligation. Total consideration ($5,000 + 24 × $500 = $17,000) is recognized ratably over 24 months — $708.33/month."
+  }
+]} />
 
 ---
 

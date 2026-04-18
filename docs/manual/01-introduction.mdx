@@ -4,6 +4,8 @@ title: Introduction & background
 description: Why revenue recognition matters, history from SAB 104 to ASC 606, and scope exclusions
 ---
 
+import Quiz from '@site/src/components/Quiz';
+
 # Module 1 — Introduction & background
 
 ## Why revenue recognition matters
@@ -97,3 +99,34 @@ Steps are not always linear. A modification in Step 1, for example, can require 
 - The standard applies to virtually all customer contracts; exclusions include leases, insurance, and financial instruments
 - A five-step model provides the analytical framework — all five steps must be applied to every contract
 - ASC 606 and IFRS 15 are substantially converged; the five-step model is identical under both standards
+
+---
+
+## Knowledge check
+
+<Quiz questions={[
+  {
+    q: "What standard did ASC 606 primarily replace in U.S. GAAP?",
+    options: ["ASC 840 — Leases", "ASC 605 — Revenue Recognition", "ASC 718 — Stock Compensation", "ASC 350 — Intangibles"],
+    correct: 1,
+    explanation: "ASC 606 replaced ASC 605 and numerous industry-specific revenue guidance documents, creating a single comprehensive standard effective for most entities beginning in 2018."
+  },
+  {
+    q: "The core principle of ASC 606 states that revenue is recognized to depict:",
+    options: ["The amount of cash expected to be collected", "The entity's right to invoice the customer", "The transfer of promised goods or services in an amount reflecting expected consideration", "The completion of all contractual obligations"],
+    correct: 2,
+    explanation: "The core principle (ASC 606-10-10-2) is to recognize revenue in an amount that reflects the consideration to which the entity expects to be entitled in exchange for transferring promised goods or services to customers."
+  },
+  {
+    q: "Which of the following contracts is explicitly excluded from the scope of ASC 606?",
+    options: ["A software licensing agreement", "A construction contract with a government agency", "A lease agreement within the scope of ASC 842", "A franchise arrangement"],
+    correct: 2,
+    explanation: "ASC 606-10-15-2 explicitly excludes lease contracts (ASC 842), insurance contracts (ASC 944), financial instruments, guarantees (ASC 460), and certain non-monetary exchanges."
+  },
+  {
+    q: "ASC 606 and IFRS 15 are best described as:",
+    options: ["Identical in every respect — no differences exist", "Substantially converged; the five-step model is the same but some expedients and disclosures differ", "Completely independent standards with different frameworks", "Converged only for public companies; private companies follow separate rules"],
+    correct: 1,
+    explanation: "ASC 606 and IFRS 15 were jointly developed by FASB and IASB and are substantially converged. The five-step model is identical, but minor differences exist in certain practical expedients and nonpublic entity disclosure requirements."
+  }
+]} />

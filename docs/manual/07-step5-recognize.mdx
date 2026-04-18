@@ -4,6 +4,8 @@ title: Step 5 — Recognize revenue
 description: Over-time vs. point-in-time criteria, input/output measurement methods, bill-and-hold (4 criteria), consignment
 ---
 
+import Quiz from '@site/src/components/Quiz';
+
 # Module 7 — Step 5: Recognize revenue
 
 ## The recognition principle
@@ -125,3 +127,34 @@ In a consignment arrangement, the entity delivers products to a dealer/distribut
 - Progress for over-time POs is measured using output or input methods — select and apply consistently
 - Bill-and-hold requires all four criteria to be met — substantive reason, separate identification, ready for transfer, no redirect ability
 - Consignment revenue is deferred until the consignee sells to an end customer — placing goods on consignment does not transfer control
+
+---
+
+## Knowledge check
+
+<Quiz questions={[
+  {
+    q: "Which of the following does NOT qualify as an over-time recognition criterion?",
+    options: ["Customer simultaneously receives and consumes the benefits as the entity performs", "Entity creates or enhances an asset the customer controls as it is created", "Entity has received advance payment before performance starts", "Entity creates an asset with no alternative use and has an enforceable right to payment for work to date"],
+    correct: 2,
+    explanation: "The three over-time criteria (ASC 606-10-25-27) relate to how control transfers — not to payment timing. Receiving advance payment does not by itself establish over-time recognition; the manner of delivery determines timing."
+  },
+  {
+    q: "The cost-to-cost method is classified as which type of progress measurement?",
+    options: ["Output method — measures results delivered to the customer", "Input method — measures resources consumed relative to total expected resources", "Time-elapsed method — straight-line over the contract term", "Units-delivered method — counts discrete units transferred"],
+    correct: 1,
+    explanation: "Cost-to-cost is an input method — it measures progress based on costs incurred relative to total expected costs. Output methods measure results directly (units produced, milestones reached, surveys of completion)."
+  },
+  {
+    q: "Which of the following is a valid indicator that control has transferred at a point in time?",
+    options: ["The entity has issued an invoice to the customer", "The entity has a signed purchase order from the customer", "Legal title to the asset has transferred to the customer", "The entity has begun production of the ordered goods"],
+    correct: 2,
+    explanation: "ASC 606-10-25-30 lists five control indicators: right to payment, legal title transferred, physical possession transferred, risks and rewards transferred, and customer acceptance. Legal title is a direct indicator; invoicing, POs, and production starts are not."
+  },
+  {
+    q: "When an entity cannot reasonably measure the outcome of a performance obligation, revenue is recognized using:",
+    options: ["Straight-line recognition over the contract term", "The cost recovery method — only to the extent of costs expected to be recovered", "Zero revenue — deferred in full until the contract is complete", "The most likely estimated completion percentage"],
+    correct: 1,
+    explanation: "Under ASC 606-10-25-36 (cost recovery method), when outcome cannot be measured but costs are expected to be recovered, revenue equals costs incurred. No profit is recognized until outcome measurement becomes reliable."
+  }
+]} />

@@ -540,3 +540,62 @@
   .sumGrid { grid-template-columns: 1fr; }
   .checklist { grid-template-columns: 1fr; }
 }
+
+@media print {
+  @page {
+    margin: 1.8cm 1.5cm;
+  }
+
+  /* Hide chrome */
+  .banner        { display: none !important; }
+  .progressWrap  { display: none !important; }
+  .tabs          { display: none !important; }
+  .navRow        { display: none !important; }
+  .contractBadge { display: none !important; }
+  .btnRow        { display: none !important; }
+  .footnote      { display: none !important; }
+
+  /* Layout */
+  .app  { max-width: 100%; padding: 0; }
+  .card {
+    border: 1px solid #ccc;
+    box-shadow: none;
+    break-inside: avoid;
+    margin-bottom: 0.75rem;
+    padding: 0.75rem;
+  }
+
+  /* Typography */
+  .secHdr {
+    background: #1F3864 !important;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+    font-size: 11px;
+    padding: 5px 8px;
+  }
+
+  .diffTag { display: none; }
+
+  /* Tables */
+  .criteriaTable th,
+  .poTable th,
+  .signTable th {
+    background: #1F3864 !important;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  .tableWrap { overflow: visible; }
+
+  /* Summary grid */
+  .sumGrid { grid-template-columns: repeat(3, 1fr); }
+
+  /* Inputs — show as plain text */
+  .input, .inputSm {
+    border: none;
+    border-bottom: 1px solid #ccc;
+    border-radius: 0;
+    background: transparent !important;
+    padding: 2px 0;
+  }
+}

@@ -4,6 +4,8 @@ title: Step 3 — Transaction price
 description: Variable consideration (EV vs. MLA), constraint, significant financing, non-cash consideration, consideration payable to customer
 ---
 
+import Quiz from '@site/src/components/Quiz';
+
 # Module 5 — Step 3: Determine the transaction price
 
 ## Definition
@@ -131,3 +133,34 @@ A SaaS company signs a 12-month contract for $120,000 base fee. If uptime exceed
 - Constraint is assessed at every reporting date — update estimates and record catch-up adjustments as facts change
 - Significant financing adjustments apply when payments are more than 12 months from performance; a practical expedient exempts contracts ≤12 months
 - Payments to customers reduce the transaction price unless in exchange for a distinct good or service
+
+---
+
+## Knowledge check
+
+<Quiz questions={[
+  {
+    q: "Variable consideration is included in the transaction price only to the extent that:",
+    options: ["It is legally required under the contract terms", "It is probable that a significant reversal of recognized revenue will NOT occur when uncertainty resolves", "The customer has confirmed the amount in writing", "It exceeds 10% of the base contract price"],
+    correct: 1,
+    explanation: "The constraint principle (ASC 606-10-32-11) limits included variable consideration to amounts for which a significant revenue reversal is not probable. This is reassessed at every reporting date."
+  },
+  {
+    q: "Which estimation method is most appropriate when an outcome is binary — e.g., a contract bonus is either achieved or not?",
+    options: ["Expected value — probability-weighted average of all outcomes", "Most likely amount — the single most probable outcome", "Fair value — market-based estimate", "Residual approach — subtract all other consideration"],
+    correct: 1,
+    explanation: "The most likely amount is best for binary outcomes (two possibilities). The expected value method is better when there are many possible outcomes — it probability-weights each outcome and sums them."
+  },
+  {
+    q: "The practical expedient for significant financing components applies when:",
+    options: ["The interest rate on the contract is below the prime rate", "The customer pays in advance before any performance occurs", "The expected period between transfer of goods/services and payment is one year or less", "The entity elects cash-basis accounting for the contract"],
+    correct: 2,
+    explanation: "ASC 606-10-32-18 allows entities to skip the financing component adjustment when, at contract inception, the expected period between transfer and payment is one year or less — avoiding complex imputed interest calculations for short-duration payment gaps."
+  },
+  {
+    q: "Slotting fees paid to a retailer to stock a product are generally treated as:",
+    options: ["A marketing expense on the income statement", "A reduction of the transaction price (revenue reduction)", "An intangible asset amortized over the shelf-space period", "A cost to obtain the contract, capitalized under ASC 340-40"],
+    correct: 1,
+    explanation: "Payments to customers (including resellers) reduce the transaction price unless the entity receives a distinct good or service in return at fair value. Slotting fees typically provide no distinct identifiable benefit, so they are revenue reductions — not expenses."
+  }
+]} />

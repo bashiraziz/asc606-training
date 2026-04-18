@@ -4,6 +4,8 @@ title: Step 4 — Allocate the transaction price
 description: Stand-alone selling price estimation (3 methods), proportional allocation, discount allocation, variable consideration allocation
 ---
 
+import Quiz from '@site/src/components/Quiz';
+
 # Module 6 — Step 4: Allocate the transaction price
 
 ## The allocation objective
@@ -100,3 +102,34 @@ SSPs should be established **before** the contract is signed, not after. Back-ca
 - Discounts may be allocated entirely to a subset of POs when specific bundling evidence exists
 - Variable consideration may be allocated to a single PO when it specifically relates to that obligation
 - SSP methodologies must be consistent, documented, and updated — not reverse-engineered after the fact
+
+---
+
+## Knowledge check
+
+<Quiz questions={[
+  {
+    q: "The primary basis for allocating transaction price to multiple performance obligations is:",
+    options: ["Costs incurred for each obligation", "Relative standalone selling prices", "The sequence in which obligations are performed", "Equal allocation across all obligations"],
+    correct: 1,
+    explanation: "ASC 606-10-32-28 requires allocating the transaction price in proportion to relative standalone selling prices. The best evidence is an observable price from standalone transactions; when not observable, estimate using accepted methods."
+  },
+  {
+    q: "The residual approach for estimating SSP is permitted only when:",
+    options: ["The entity prefers it for simplicity", "The SSP of the obligation is highly variable or uncertain", "The contract includes variable consideration", "There are more than three performance obligations in the contract"],
+    correct: 1,
+    explanation: "Under ASC 606-10-32-34, the residual approach (TP minus all other SSPs) is permitted only when the SSP is highly variable or uncertain — for example, when the entity sells the same obligation to different customers at widely varying prices."
+  },
+  {
+    q: "A bundle discount should be allocated entirely to specific performance obligations (not pro-rata) when:",
+    options: ["The discount exceeds 20% of the total contract price", "Observable evidence shows the discount relates specifically to those obligations", "The customer requests that allocation method", "All of those obligations are delivered at the same point in time"],
+    correct: 1,
+    explanation: "Under ASC 606-10-32-36, a discount can be allocated to a subset of obligations when observable evidence shows the discount specifically relates to those obligations — for instance, the entity regularly sells that exact subset as a bundle at that price."
+  },
+  {
+    q: "When the transaction price changes after contract inception, the change is allocated:",
+    options: ["Entirely to the remaining unperformed obligations", "On the same basis as at inception, with amounts related to satisfied obligations recognized as a current-period catch-up", "Pro-rata based on revenue recognized to date", "Only to variable consideration components of the contract"],
+    correct: 1,
+    explanation: "ASC 606-10-32-44 requires allocating TP changes using the same methodology as at inception. If the change relates to a satisfied obligation, it is recognized immediately as a cumulative catch-up — not restated into prior periods."
+  }
+]} />

@@ -4,6 +4,8 @@ title: Step 1 — Identify the contract
 description: Five criteria for contract existence, contract modifications (3 scenarios), and contract combinations
 ---
 
+import Quiz from '@site/src/components/Quiz';
+
 # Module 3 — Step 1: Identify the contract
 
 ## Overview
@@ -107,3 +109,34 @@ When a previously recognized contract no longer meets the criteria:
 - Three modification scenarios: new contract / termination + new contract / catch-up adjustment — choose based on whether remaining goods are distinct AND whether the price reflects SSP
 - Contract combinations prevent artificial splitting; combine when one deal is broken into multiple contracts
 - Reassess Step 1 criteria when facts change — especially collectibility
+
+---
+
+## Knowledge check
+
+<Quiz questions={[
+  {
+    q: "How many of the five criteria in ASC 606-10-25-1 must be met for a valid contract to exist?",
+    options: ["Any 3 out of 5", "Any 4 out of 5", "All 5", "All 5, except collectibility which is assessed separately"],
+    correct: 2,
+    explanation: "All five criteria must be met: (a) approval and commitment, (b) rights identified, (c) payment terms identified, (d) commercial substance, and (e) collectibility probable. There is no majority or weighted test — one failure stops revenue recognition."
+  },
+  {
+    q: "When assessing collectibility (criterion e), the amount evaluated is:",
+    options: ["The full stated contract price", "The amount the entity realistically expects to collect, considering customer credit risk", "The minimum guaranteed payment", "The fair value of goods or services to be transferred"],
+    correct: 1,
+    explanation: "Collectibility is assessed on the realistic amount the entity expects to collect — not the stated contract price. A customer with poor credit may make the full contract price uncollectible even though the stated amount is higher."
+  },
+  {
+    q: "A contract modification that adds new distinct goods at their standalone selling price is accounted for as:",
+    options: ["A modification requiring a cumulative catch-up to the original contract", "A separate new contract — the original contract is unchanged", "A termination of the original contract followed by a new combined contract", "A variable consideration adjustment to the original transaction price"],
+    correct: 1,
+    explanation: "Under ASC 606-10-25-12, a modification is a separate contract when (1) scope increases by adding distinct goods/services AND (2) the price increase reflects their standalone selling prices. The original contract continues without change."
+  },
+  {
+    q: "When a previously recognized contract no longer meets all five criteria, the entity should:",
+    options: ["Immediately reverse all revenue recognized to date", "Stop recognizing revenue; treat consideration received as a liability unless no refund obligation exists", "Continue recognizing revenue using the original analysis through contract end", "Recognize a loss equal to remaining performance costs"],
+    correct: 1,
+    explanation: "Revenue recognition stops when criteria fail. Consideration already received becomes a liability (refund obligation). Previously recognized revenue is reversed only if the entity has a refund obligation and no completed, non-reversible obligations."
+  }
+]} />

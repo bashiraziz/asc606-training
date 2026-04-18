@@ -4,6 +4,8 @@ title: Other key topics
 description: Contract costs (ASC 340-40), licenses (access vs. use), warranties (assurance vs. service-type), material rights
 ---
 
+import Quiz from '@site/src/components/Quiz';
+
 # Module 8 — Other key topics
 
 ## Contract costs — ASC 340-40
@@ -121,3 +123,34 @@ A customer option to acquire additional goods or services is a **performance obl
 - Sales-based royalties are recognized only when the underlying sale/usage occurs — no earlier
 - Assurance warranties → cost accrual under ASC 460; service-type warranties → separate PO under ASC 606
 - Material rights (discounted options) are separate POs — allocate transaction price and recognize on exercise or expiry
+
+---
+
+## Knowledge check
+
+<Quiz questions={[
+  {
+    q: "A right-to-use software license is recognized:",
+    options: ["Ratably over the entire license term", "At the point in time the license is made available to the customer", "When the first royalty payment is received", "Over time using output progress methods"],
+    correct: 1,
+    explanation: "A right-to-use license gives the customer control of the IP as it exists at the time of delivery. Revenue is recognized at the point in time the license is made available — not spread over the license period, because the customer already holds control."
+  },
+  {
+    q: "Under the sales-based royalty exception, royalties tied to a license of IP are recognized:",
+    options: ["When the license is granted to the customer", "At the later of: when the sale/usage occurs, or when the related performance obligation is satisfied", "At the end of each fiscal quarter when statements are received", "Ratably over the license term as a constraint on variable consideration"],
+    correct: 1,
+    explanation: "ASC 606-10-55-65 creates a specific exception: sales-based and usage-based royalties on licenses of IP are recognized at the later of (1) when the subsequent sale or usage occurs, or (2) when the performance obligation to which the royalty relates is satisfied."
+  },
+  {
+    q: "An assurance-type warranty is accounted for under:",
+    options: ["ASC 606 — as a separate performance obligation", "ASC 460 — Guarantees, as a liability accrual", "ASC 350 — Intangibles, as a deferred cost", "ASC 340-40 — as a contract fulfillment cost"],
+    correct: 1,
+    explanation: "Assurance-type warranties only guarantee the product meets agreed specifications — they are not a separate service. They are accounted for under ASC 460 as a guarantee liability. Service-type warranties (providing additional service) are separate POs under ASC 606."
+  },
+  {
+    q: "Incremental costs to obtain a contract must be capitalized when:",
+    options: ["The contract value exceeds $100,000", "The costs are incremental and expected to be recovered over a period greater than one year", "Management approves the cost capitalization policy in writing", "The commission rate exceeds 5% of total contract value"],
+    correct: 1,
+    explanation: "Under ASC 340-40-25-2, incremental costs (costs that would not have been incurred without the contract, e.g., sales commissions) are capitalized when the entity expects to recover them. A practical expedient allows expensing when the amortization period would be one year or less."
+  }
+]} />

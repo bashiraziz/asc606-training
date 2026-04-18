@@ -4,6 +4,8 @@ title: Disclosures
 description: Quantitative requirements, qualitative requirements, and all practical expedients table
 ---
 
+import Quiz from '@site/src/components/Quiz';
+
 # Module 9 — Disclosures
 
 ## Overview
@@ -118,3 +120,34 @@ However, they must still disclose:
 - Remaining PO disclosure shows the revenue backlog — practical expedients can reduce this burden for short-term or right-to-invoice contracts
 - Qualitative disclosures on significant judgments — especially constraint determinations and SSP methods — are often more informative than quantitative tables
 - Elected practical expedients must be disclosed — auditors and investors will ask
+
+---
+
+## Knowledge check
+
+<Quiz questions={[
+  {
+    q: "ASC 606 requires revenue to be disaggregated into categories that:",
+    options: ["Match the entity's internal management reporting segments exactly", "Depict how the nature, amount, timing, and uncertainty of revenue differ across contracts", "Always separate goods revenue from services revenue", "Are consistent with SEC geographic reporting requirements"],
+    correct: 1,
+    explanation: "ASC 606-10-50-5 requires disaggregation into categories that best depict how economic factors affect revenue. The format is flexible — geography, product line, channel, contract type, or a combination — chosen to explain the entity's revenue drivers."
+  },
+  {
+    q: "The 'remaining performance obligations' disclosure can be omitted when:",
+    options: ["The entity uses the right-to-invoice expedient or original contract duration is one year or less", "The entity has more than 500 active contracts outstanding", "All contract prices are fixed with no variable consideration", "All remaining obligations are recognized over time"],
+    correct: 0,
+    explanation: "ASC 606-10-50-14 provides two expedients to omit the remaining PO disclosure: (1) contracts with original expected duration of one year or less, and (2) performance obligations measured using the right-to-invoice practical expedient."
+  },
+  {
+    q: "A contract asset differs from a receivable in that:",
+    options: ["A contract asset is always classified as current; receivables can be long-term", "A contract asset is conditional on something other than the passage of time — such as satisfying another obligation", "A contract asset bears interest; a receivable does not", "A contract asset represents a refund obligation; a receivable represents a billing right"],
+    correct: 1,
+    explanation: "A receivable is an unconditional right to consideration — only time must pass. A contract asset is conditional on future performance (e.g., completing another PO). The distinction drives balance sheet classification and impairment testing."
+  },
+  {
+    q: "Which of the following is NOT a required disclosure under ASC 606-10-50?",
+    options: ["Significant judgments used to determine the transaction price", "Methods used to recognize revenue for each type of contract", "The entity's credit rating and internal collection policy", "Judgments made in determining when performance obligations are satisfied"],
+    correct: 2,
+    explanation: "ASC 606 requires disclosure of significant judgments, estimates, and methods — including how TP is determined, how progress is measured, and how POs are identified. An entity's credit rating and internal collection procedures are not required disclosures."
+  }
+]} />

@@ -4,6 +4,8 @@ title: Five-step model overview
 description: Visual summary of all five steps, how they interact, and when to revisit earlier steps
 ---
 
+import Quiz from '@site/src/components/Quiz';
+
 # Module 2 — Five-step model overview
 
 ## The core principle
@@ -124,3 +126,34 @@ The five-step analysis applies:
 - Steps are sequential in structure but require reassessment when contract facts change
 - The core question at every step is: *has control transferred, to what extent, and for what amount?*
 - For multi-element arrangements, the allocation in Step 4 determines how much revenue each obligation earns — getting SSPs right is critical
+
+---
+
+## Knowledge check
+
+<Quiz questions={[
+  {
+    q: "What is the correct order of the five steps under ASC 606?",
+    options: ["Identify contract → Determine price → Identify obligations → Allocate → Recognize", "Identify contract → Identify obligations → Determine price → Allocate → Recognize", "Identify obligations → Identify contract → Determine price → Allocate → Recognize", "Identify contract → Identify obligations → Allocate → Determine price → Recognize"],
+    correct: 1,
+    explanation: "The five steps are: (1) Identify the contract, (2) Identify performance obligations, (3) Determine the transaction price, (4) Allocate the transaction price, (5) Recognize revenue. Step 3 must precede Step 4 because you cannot allocate a price you have not yet determined."
+  },
+  {
+    q: "When a contract has only one performance obligation, which step becomes automatic?",
+    options: ["Step 2 — Identify obligations", "Step 3 — Determine the transaction price", "Step 4 — Allocate the transaction price", "Step 5 — Recognize revenue"],
+    correct: 2,
+    explanation: "With a single performance obligation, the entire transaction price is allocated to it — making Step 4 automatic. Steps 2 and 3 still require full analysis regardless of how many obligations exist."
+  },
+  {
+    q: "A change in variable consideration estimates mid-contract requires:",
+    options: ["Restatement of all prior-period financial statements", "A cumulative catch-up adjustment recognized in the current period", "Deferral of all revenue until the uncertainty fully resolves", "No adjustment — the original estimate is locked at inception"],
+    correct: 1,
+    explanation: "Variable consideration is reassessed at each reporting date. Changes are recorded as a cumulative catch-up in the current period, not as a restatement of prior periods. This is the core of the catch-up constraint principle."
+  },
+  {
+    q: "The five-step model is applied at the level of:",
+    options: ["Each individual transaction line item", "Each customer relationship over its lifetime", "Each contract, or a portfolio of similar contracts when the expedient applies", "Each reporting period independently"],
+    correct: 2,
+    explanation: "The unit of account is the contract. The portfolio practical expedient allows applying the model to a group of similar contracts when the entity reasonably expects the portfolio result does not differ materially from individual application."
+  }
+]} />
