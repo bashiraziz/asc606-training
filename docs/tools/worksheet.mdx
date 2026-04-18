@@ -5,15 +5,13 @@ description: Interactive five-step contract analysis worksheet
 ---
 
 import BrowserOnly from '@docusaurus/BrowserOnly';
+import Worksheet from '@site/src/components/Worksheet';
 
 # ASC 606 contract worksheet
 
 Complete one worksheet per contract at inception. Work through all eight tabs in order.
 All calculations are automatic. No data is saved — print or screenshot to retain your work.
 
-<BrowserOnly fallback={<div>Loading worksheet...</div>}>
-  {() => {
-    const Worksheet = require('@site/src/components/Worksheet').default;
-    return <Worksheet />;
-  }}
+<BrowserOnly fallback={<div style={{padding:'2rem',color:'#666'}}>Loading worksheet...</div>}>
+  {() => <Worksheet />}
 </BrowserOnly>
