@@ -340,6 +340,13 @@ export default function Worksheet(): React.JSX.Element {
       {/* ── Tab 1: Step 1 ── */}
       {activeTab === 1 && (
         <div className={styles.panel}>
+          {(contractInfo.contractNum || contractInfo.customer) && (
+            <div className={styles.contractBadge}>
+              Analyzing: <strong>{contractInfo.contractNum || '—'}</strong>
+              {contractInfo.customer ? ` · ${contractInfo.customer}` : ''}
+              {contractInfo.contractDate ? ` · ${contractInfo.contractDate}` : ''}
+            </div>
+          )}
           <div className={styles.card}>
             <div className={styles.secHdr}>Step 1 — identify the contract <span className={styles.diffTag}>ASC 606-10-25-1</span></div>
             <p className={styles.hint}>All five criteria must be met before you can account for this as a revenue contract.</p>

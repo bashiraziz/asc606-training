@@ -74,6 +74,16 @@
   /* just a container */
 }
 
+.contractBadge {
+  background: #E6F1FB;
+  border: 1px solid #A8C4E5;
+  border-radius: 8px;
+  padding: 8px 14px;
+  font-size: 12px;
+  color: #1F3864;
+  margin-bottom: 10px;
+}
+
 .card {
   background: #fff;
   border: 1px solid #e0e0e0;
@@ -188,6 +198,7 @@
   padding: 8px 10px;
   border-bottom: 1px solid #eee;
   vertical-align: middle;
+  pointer-events: auto;
 }
 
 .criteriaTable tr:nth-child(even) td {
@@ -230,6 +241,7 @@
   display: flex;
   gap: 12px;
   flex-wrap: wrap;
+  pointer-events: auto;
 }
 
 .radioLabel {
@@ -238,6 +250,17 @@
   gap: 5px;
   font-size: 13px;
   cursor: pointer;
+  pointer-events: auto;
+  user-select: none;
+}
+
+.radioLabel input[type='radio'] {
+  pointer-events: auto;
+  cursor: pointer;
+  accent-color: #2E75B6;
+  width: 15px;
+  height: 15px;
+  flex-shrink: 0;
 }
 
 .btnRow {
