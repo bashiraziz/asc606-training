@@ -5,6 +5,7 @@ description: Interactive five-step contract analysis worksheet
 ---
 
 import BrowserOnly from '@docusaurus/BrowserOnly';
+import ErrorBoundary from '@site/src/components/ErrorBoundary';
 import Worksheet from '@site/src/components/Worksheet';
 
 # ASC 606 contract worksheet
@@ -13,5 +14,12 @@ Complete one worksheet per contract at inception. Work through all eight tabs in
 All calculations are automatic. No data is saved — print or screenshot to retain your work.
 
 <BrowserOnly fallback={<div style={{padding:'2rem',color:'#666'}}>Loading worksheet...</div>}>
-  {() => <Worksheet />}
+  {() => (
+    <ErrorBoundary>
+      <div style={{padding:'0.75rem 1rem',background:'#e8f5e9',border:'1px solid #a5d6a7',borderRadius:'6px',marginBottom:'1rem',fontSize:'13px'}}>
+        ✅ Diagnostic: JavaScript loaded and BrowserOnly rendered successfully.
+      </div>
+      <Worksheet />
+    </ErrorBoundary>
+  )}
 </BrowserOnly>

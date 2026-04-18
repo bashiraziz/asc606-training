@@ -5,6 +5,7 @@ description: Accrual-basis month-end revenue close workflow
 ---
 
 import BrowserOnly from '@docusaurus/BrowserOnly';
+import ErrorBoundary from '@site/src/components/ErrorBoundary';
 import CloseTracker from '@site/src/components/CloseTracker';
 
 # Month-end revenue close tracker
@@ -12,5 +13,12 @@ import CloseTracker from '@site/src/components/CloseTracker';
 Accrual basis · ASC 606 · Use during every period-end close cycle.
 
 <BrowserOnly fallback={<div style={{padding:'2rem',color:'#666'}}>Loading close tracker...</div>}>
-  {() => <CloseTracker />}
+  {() => (
+    <ErrorBoundary>
+      <div style={{padding:'0.75rem 1rem',background:'#e8f5e9',border:'1px solid #a5d6a7',borderRadius:'6px',marginBottom:'1rem',fontSize:'13px'}}>
+        ✅ Diagnostic: JavaScript loaded and BrowserOnly rendered successfully.
+      </div>
+      <CloseTracker />
+    </ErrorBoundary>
+  )}
 </BrowserOnly>
