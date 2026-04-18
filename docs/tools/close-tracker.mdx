@@ -1,0 +1,18 @@
+---
+title: Month-end close tracker
+sidebar_position: 2
+description: Accrual-basis month-end revenue close workflow
+---
+
+import BrowserOnly from '@docusaurus/BrowserOnly';
+
+# Month-end revenue close tracker
+
+Accrual basis · ASC 606 · Use during every period-end close cycle.
+
+<BrowserOnly fallback={<div>Loading close tracker...</div>}>
+  {() => {
+    const CloseTracker = require('@site/src/components/CloseTracker').default;
+    return <CloseTracker />;
+  }}
+</BrowserOnly>

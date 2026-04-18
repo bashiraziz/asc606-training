@@ -1,0 +1,133 @@
+---
+sidebar_position: 5
+title: Step 3 — Transaction price
+description: Variable consideration (EV vs. MLA), constraint, significant financing, non-cash consideration, consideration payable to customer
+---
+
+# Module 5 — Step 3: Determine the transaction price
+
+## Definition
+
+The transaction price is the amount of consideration to which the entity **expects to be entitled** in exchange for transferring promised goods or services to a customer, excluding amounts collected on behalf of third parties (e.g., sales taxes) (ASC 606-10-32-2).
+
+Key word: *expects* — not the stated contract price. If you routinely accept less, estimate what you will actually collect.
+
+## Components of the transaction price
+
+The transaction price may include up to five components:
+
+1. Fixed consideration
+2. Variable consideration (net of constraint)
+3. Significant financing component adjustment
+4. Non-cash consideration
+5. Consideration payable to customer (reduction)
+
+## 1. Fixed consideration
+
+The contractual amount stated as a fixed price. This is the baseline.
+
+## 2. Variable consideration (ASC 606-10-32-5)
+
+Variable consideration includes any amount that varies based on future outcomes — discounts, rebates, refunds, credits, price concessions, incentives, performance bonuses, or penalties.
+
+### Estimation methods
+
+Two methods are permitted; choose the one that **better predicts** the amount to which the entity will be entitled:
+
+| Method | When to use | How it works |
+|---|---|---|
+| **Expected value (EV)** | Wide range of possible outcomes; large volume of similar contracts | Probability-weighted average of all possible amounts |
+| **Most likely amount (MLA)** | Binary or limited outcomes (e.g., bonus is either earned or not) | The single most likely outcome in the range |
+
+:::tip Choosing a method
+Use the method that best predicts the outcome. For a performance bonus that is either $0 or $500,000, MLA is better — the EV would give a mid-point that is never actually paid. For a customer rebate based on tiered volume, EV is better because many volume levels are possible.
+:::
+
+### The variable consideration constraint (ASC 606-10-32-11)
+
+Include variable consideration only to the extent it is **highly probable** that a significant revenue reversal will not occur when the uncertainty is resolved.
+
+Factors that increase the risk of reversal (apply more constraint):
+- Highly susceptible to factors outside the entity's control
+- Long time before uncertainty resolved
+- Limited experience with similar contracts
+- Wide range of possible outcomes
+- Practice of offering price concessions
+
+**Three constraint levels:**
+
+| Level | Treatment |
+|---|---|
+| No constraint | Include full estimated VC in transaction price |
+| Partially constrained | Include only the amount highly probable of no reversal |
+| Fully constrained | Exclude VC entirely until uncertainty resolves |
+
+:::warning Reassessment at every reporting date
+Variable consideration estimates and constraint determinations must be **updated at each reporting date**. Cumulative catch-up adjustments are recorded in the current period — not as restatements.
+:::
+
+## 3. Significant financing component (ASC 606-10-32-15)
+
+If the timing of payments provides the customer or the entity with a significant benefit of financing, adjust the transaction price for the time value of money.
+
+**Indicators of a significant financing component:**
+- Significant difference between cash selling price and stated contract price
+- Payment timing is materially different from when control transfers (more than 12 months)
+- Market rate of interest is materially different from the contract rate
+
+**Practical expedient:** An entity need not adjust for the financing component if the period between payment and transfer of goods/services is **one year or less** at contract inception (ASC 606-10-32-18).
+
+### Direction of adjustment
+
+| Payment timing | Effect on TP |
+|---|---|
+| Customer pays **before** performance | Interest **added** (increase TP; recognize interest expense) |
+| Customer pays **after** performance | Interest **subtracted** (decrease TP; recognize interest income) |
+
+## 4. Non-cash consideration (ASC 606-10-32-21)
+
+When a customer pays with goods, services, or other non-cash assets, measure the transaction price at the **fair value** of the non-cash consideration at contract inception.
+
+If fair value cannot be reasonably estimated, measure it by reference to the standalone selling price of the goods or services promised.
+
+## 5. Consideration payable to customer (ASC 606-10-32-25)
+
+Payments from the entity to the customer — including cash, credits, coupons, vouchers, or other items — reduce the transaction price unless they are in exchange for a **distinct good or service** from the customer.
+
+If the payment is for a distinct good or service received: treat as a purchase (expense or asset).
+If not: reduce transaction price → reduce revenue.
+
+:::warning Channel fees
+Slotting fees, cooperative advertising payments, and similar payments to resellers/distributors are typically reductions of TP, not marketing expenses — unless the entity receives a distinct benefit.
+:::
+
+## Calculating the transaction price — formula
+
+```
+Transaction price =
+  Base fixed price
+  + Variable consideration (net of constraint)
+  ± Significant financing component adjustment
+  + Non-cash consideration (at FV)
+  − Consideration payable to customer (if not for distinct good/service)
+```
+
+## Example — SaaS contract with bonus
+
+A SaaS company signs a 12-month contract for $120,000 base fee. If uptime exceeds 99.9%, a $15,000 bonus is paid.
+
+**Facts:** Based on history, there is a 70% probability of achieving the uptime target.
+
+**EV approach:** $15,000 × 70% = $10,500 estimated VC.
+
+**Constraint check:** Is it highly probable no significant reversal occurs? Uptime is largely in the entity's control and history supports 70% achievement. Assume no constraint. Include $10,500.
+
+**Transaction price:** $120,000 + $10,500 = **$130,500**
+
+## Key takeaways
+
+- The transaction price is what the entity *expects* to collect — not always the stated contract price
+- Variable consideration is estimated using EV or MLA, then constrained to the amount highly probable of no reversal
+- Constraint is assessed at every reporting date — update estimates and record catch-up adjustments as facts change
+- Significant financing adjustments apply when payments are more than 12 months from performance; a practical expedient exempts contracts ≤12 months
+- Payments to customers reduce the transaction price unless in exchange for a distinct good or service

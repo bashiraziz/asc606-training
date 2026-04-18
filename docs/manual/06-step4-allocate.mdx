@@ -1,0 +1,102 @@
+---
+sidebar_position: 6
+title: Step 4 — Allocate the transaction price
+description: Stand-alone selling price estimation (3 methods), proportional allocation, discount allocation, variable consideration allocation
+---
+
+# Module 6 — Step 4: Allocate the transaction price
+
+## The allocation objective
+
+When a contract has more than one performance obligation, the transaction price must be allocated to each PO in a way that depicts the amount of consideration the entity **expects to be entitled to** in exchange for satisfying each obligation (ASC 606-10-32-28).
+
+The allocation is based on **relative stand-alone selling prices (SSPs)**.
+
+## Stand-alone selling price (SSP)
+
+The SSP is the price at which the entity would sell the good or service **separately to a customer** — i.e., not as part of a bundle.
+
+### Best evidence: observable prices
+
+The best evidence of SSP is the price the entity charges when it sells the good or service standalone. If the entity regularly sells items separately, use those prices.
+
+### When SSP is not directly observable — estimation methods
+
+Three methods are permitted (ASC 606-10-32-34):
+
+| Method | Description | When to use |
+|---|---|---|
+| **Adjusted market assessment** | Evaluate the market and estimate what a customer would pay | Comparable observable market prices exist |
+| **Expected cost plus margin** | Estimate expected costs and add an appropriate margin | Costs are estimable; margin is supportable |
+| **Residual approach** | SSP = Total TP − sum of SSPs of other POs | Only when SSP is **highly variable** or **uncertain** (narrow use) |
+
+:::warning Residual approach limitations
+The residual approach can only be used when the SSP of a good or service is highly variable (sold at widely varying prices) or uncertain (no historical selling price). It cannot be used simply because it is convenient.
+:::
+
+## Proportional allocation — the default
+
+The default method allocates the transaction price in proportion to relative SSPs:
+
+```
+Allocated TP for PO₁ = (SSP₁ / Total SSP) × Transaction Price
+```
+
+**Example:**
+
+| PO | SSP | SSP % | Allocated TP |
+|---|---|---|---|
+| SaaS license | $100,000 | 62.5% | $62,500 |
+| Onboarding services | $40,000 | 25.0% | $25,000 |
+| Training | $20,000 | 12.5% | $12,500 |
+| **Total** | **$160,000** | **100%** | **$100,000** |
+
+Note: the total transaction price ($100,000) is less than the total SSP ($160,000), meaning the bundle is offered at a $60,000 discount. That discount is absorbed proportionally across all POs.
+
+## Allocating discounts (ASC 606-10-32-36)
+
+Discounts are generally allocated proportionally. However, a discount may be **allocated entirely to one or more (but not all) POs** if all three criteria are met:
+
+1. The entity regularly sells each PO in the group separately
+2. The entity also regularly sells one subset of those POs as a bundle at a discount
+3. The discount associated with that bundle is substantially the same as the discount in the contract
+
+:::tip Why this matters
+If an entity bundles software + installation at a fixed price but charges full price for software alone, the discount arguably belongs entirely to the installation — not spread across both. This exception allows that allocation.
+:::
+
+## Allocating variable consideration (ASC 606-10-32-39)
+
+Variable consideration should also be allocated proportionally. However, variable consideration may be allocated **entirely to one PO** if both conditions are met:
+
+1. The variable consideration relates specifically to satisfying that PO (or a distinct good/service within a series)
+2. Allocating the variable amount entirely to that PO is consistent with the overall allocation objective
+
+**Example:** A performance bonus payable only if a specific software module goes live on time relates entirely to the delivery of that module — not to unrelated maintenance services in the same contract.
+
+## Changes in transaction price after contract inception
+
+When the transaction price changes after contract inception (e.g., due to VC reassessment), the change is allocated using the **same method as at inception** — proportional to SSPs.
+
+The cumulative catch-up adjustment is recognized in the current period for POs already partially or fully satisfied.
+
+## SSP estimation in practice
+
+Establishing defensible SSPs requires:
+
+1. A consistent methodology applied to all similar contracts
+2. Documentation of the basis for each SSP
+3. Regular updates when market conditions change
+4. Auditor-supportable evidence — price lists, historical sales data, market studies
+
+:::warning Don't reverse-engineer SSPs
+SSPs should be established **before** the contract is signed, not after. Back-calculating an SSP to achieve a desired revenue result violates the allocation objective and creates audit risk.
+:::
+
+## Key takeaways
+
+- Allocation is based on relative SSPs — proportional by default
+- SSP best evidence is observable prices; when not observable, use adjusted market assessment, expected cost plus margin, or (only in narrow circumstances) residual approach
+- Discounts may be allocated entirely to a subset of POs when specific bundling evidence exists
+- Variable consideration may be allocated to a single PO when it specifically relates to that obligation
+- SSP methodologies must be consistent, documented, and updated — not reverse-engineered after the fact

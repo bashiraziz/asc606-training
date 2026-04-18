@@ -1,0 +1,90 @@
+---
+title: Non-compliant scenarios
+sidebar_position: 2
+description: Two non-compliant ASC 606 scenarios with violation analysis and required corrections
+---
+
+# Non-compliant scenarios
+
+Two scenarios illustrating common ASC 606 violations with required corrections.
+
+---
+
+## Scenario 1 — Channel stuffing
+
+:::info Facts
+**Company:** Consumer electronics manufacturer  
+**Practice:** In the final weeks of each quarter, the company offers distributors a 15% price discount to purchase excess inventory. Distributors have an informal (but consistently honored) right to return unsold goods within 90 days. The company recognizes revenue at shipment.  
+**Effect:** Revenue is pulled forward by 4–6 weeks per quarter. Returns average 22% of these end-of-quarter shipments.
+:::
+
+| Step | Problem |
+|---|---|
+| Step 1 | Collectibility criterion (e) is impaired — the effective transaction price is uncertain given the de facto return arrangement. Also, the arrangement lacks commercial substance if the distributor doesn't bear real economic risk. |
+| Step 2 | Single PO — delivery of goods. |
+| Step 3 | TP includes a variable consideration component (right of return). A return liability and corresponding asset must be recorded. The 22% return rate should reduce the TP to reflect expected returns. |
+| Step 4 | N/A — single PO. |
+| Step 5 | Control has **not** transferred at shipment when the distributor has no real inventory risk. If returns are probable and the entity retains economic risk, revenue must be deferred until the return right lapses or the distributor sells to an end customer. |
+
+:::danger ASC 606 violations
+1. **Revenue recognized before control transfers** — the distributor's de facto return right means the manufacturer retains economic risk and control
+2. **Variable consideration not constrained** — the 22% return rate creates a highly probable revenue reversal; the full shipped amount should not be recognized
+3. **Step 1 criterion (d) failure** — the arrangement lacks genuine commercial substance if distributor is not economically at risk
+:::
+
+:::tip Required correction
+1. Estimate returns using historical data (22% return rate)
+2. Recognize revenue only on the non-returnable portion at shipment: $Shipped × (1 − 22% expected return rate)
+3. Record a refund liability for expected returns and a corresponding asset (right to recover inventory)
+4. Reassess the constraint at each reporting date
+5. Eliminate the informal return arrangement or enforce it contractually with appropriate revenue deferral
+:::
+
+---
+
+## Scenario 2 — Bill-and-hold without criteria
+
+:::info Facts
+**Company:** Industrial equipment manufacturer  
+**Practice:** At quarter-end, the company invoices a customer for $3,200,000 of custom equipment and recognizes revenue, even though the equipment is stored in the company's warehouse. The customer requested the delay because their new facility is not yet ready.  
+**Bill-and-hold criteria check:**  
+- (1) Substantive reason: ✅ Customer facility not ready  
+- (2) Separately identified: ✅ Tagged with customer markings  
+- (3) Ready for transfer: ✅ Complete and inspected  
+- (4) Entity cannot use or redirect: ❌ Equipment stored in general warehouse; no contractual restriction on reuse; company has directed similar equipment to other customers in the past
+:::
+
+| Step | Problem |
+|---|---|
+| Step 1 | Contract exists. |
+| Step 2 | Single PO — delivery of custom equipment. |
+| Step 3 | TP = $3,200,000. |
+| Step 4 | Single PO. |
+| Step 5 | Bill-and-hold requires **all four** criteria. Criterion 4 fails — the company stores equipment in its general warehouse and has previously redirected similar items. Revenue cannot be recognized until physical delivery occurs or criterion 4 is genuinely satisfied. |
+
+:::danger ASC 606 violations
+1. **Bill-and-hold Criterion 4 not met** — equipment is not legally or physically segregated in a way that prevents the entity from redirecting it to other customers
+2. **Premature revenue recognition** — $3,200,000 recognized in the current quarter should be deferred until control transfers
+3. **Quarter-end manipulation pattern** — bill-and-hold used to pull forward revenue at quarter-end without genuine customer need for storage
+:::
+
+:::tip Required correction
+1. Reverse the $3,200,000 revenue recognized in the current period
+2. Record deferred revenue (contract liability) until actual delivery
+3. To fix the underlying arrangement: establish legally segregated storage for bill-and-hold inventory, include a contractual restriction preventing redirection, and document compliance with all four criteria before recognizing revenue
+4. Implement a bill-and-hold checklist requiring sign-off on all four criteria before any bill-and-hold transaction is approved
+:::
+
+---
+
+## Compliant vs. non-compliant — comparison table
+
+| Dimension | Compliant indicators | Non-compliant red flags |
+|---|---|---|
+| **Control transfer** | Clearly documented; customer bears risk at recognition | Recognition before customer bears genuine economic risk |
+| **Variable consideration** | Constrained to highly probable amount; return liability recorded | Full contract price recognized without VC constraint |
+| **Performance obligations** | Distinct test applied; bundling/separation based on economics | POs split or bundled to optimize revenue timing |
+| **Bill-and-hold** | All four criteria met and documented pre-transaction | Any criterion fails; no segregated storage; pattern of quarter-end use |
+| **Consignment** | Revenue deferred to end-customer sale | Revenue recognized on distributor shipment with informal return rights |
+| **Estimate updates** | VC and progress reassessed at every reporting date | Estimates locked at inception; not updated when facts change |
+| **Documentation** | SSP methods, constraint rationale, judgment basis all in file | Judgments undocumented; SSPs reverse-engineered to desired outcome |
